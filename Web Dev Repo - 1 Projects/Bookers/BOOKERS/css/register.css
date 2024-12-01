@@ -1,0 +1,111 @@
+
+
+
+body {font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+  }
+  
+
+/* Navigation */
+nav {
+    border: 2px solid #f0a500;
+    font-family: 'Arial, sans-serif';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1d1d;
+    padding: .13rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: wavy;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: wavy;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ebc36b;
+}
+
+  
+  form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-right: 40px;
+    border: 1px solid #f0a500;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(244, 244, 244, 0.935);
+    text-shadow: #636060;
+    color : rgb(232, 229, 226);
+    justify-content: flex-end;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type="number"], input[type="text"],input[type="password"], input[type="email"] {
+    width: 95%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px ;
+    border: 1px solid #636060;
+    text-decoration: solid;
+    font-size: 20px;
+    align-self: center;
+  }
+  
+
+
+  button[type="submit"] {
+    width: 102%;
+    height: 50px;
+    background-color: #f0a500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #f6ca2a;
+  }
+
+  footer {
+    border: 2px solid #f0a500;
+    background-color: #1e1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: bottom;
+    width: 100%;
+    bottom: 0;
+}

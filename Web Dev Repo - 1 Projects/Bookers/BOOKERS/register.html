@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/register.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Bookers.com</div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="typewriter"></h1>
+
+  <form id="registration-form">
+    <label for="name">Name: *</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="phone">Phone Number: *</label>
+    <input type="number" id="phone" name="phone" required><br><br>
+
+    <label for="email">Email ID: *</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Set Password: *</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <h6>
+      <input type="checkbox" name="privacy-policy" required>
+      I have read the privacy policies and user agreement and hereby agree with the privacy policy and processing of my personal data by BOOKERS Services Private Limited. I hereby authorize and give consent to BOOKERS Services Private Limited to send me, either through itself or through any third-party service provider, from time-to-time various information/promotional material/transactional information/account information, and other information by way of notifications/alerts/SMS/WhatsApp messages and other messages
+    </h6>
+
+    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div><br><br>
+
+    <button type="submit">Create Account</button>
+    <br>
+  </form>
+
+  <footer>
+    <p>&copy; 2024 Bookers.com. All rights reserved.</p>
+  </footer>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

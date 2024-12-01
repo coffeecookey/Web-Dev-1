@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saved Blogs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="savedblogs.css" />
+</head>
+
+<body>
+  <!-- Navigation Menu -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">MyBlog</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <button class="btn create-post-btn" onclick="window.location.href='blog.html'">Create a Post</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Saved Blogs Section -->
+  <section class="saved-blogs">
+    <div class="container">
+      <h1>Your Blogs</h1>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterBlogs('all')">All</button>
+        <button class="filter-btn" onclick="filterBlogs('journal')">Journal</button>
+        <button class="filter-btn" onclick="filterBlogs('travel')">Travel</button>
+        <button class="filter-btn" onclick="filterBlogs('secret')">Your Secret</button>
+      </div>
+
+      <!-- Saved Blogs -->
+      <div id="saved-posts"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <p>© 2024 MyBlog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="savedBlogs.js"></script>
+</body>
+
+</html>
