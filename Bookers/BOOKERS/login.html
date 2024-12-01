@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bookers.com</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bookers.com</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Login to Bookers.com</h1>
+    </header>
+
+    <section>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button class="google-login">Login with Google</button><br><br>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div><br>
+            <button type="submit">Login</button><br><br>
+            <a href="register.html">New User? Click here to Register</a>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bookers.com. All rights reserved.</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>

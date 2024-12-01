@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Available - Bookers.com</title>
+    <link rel="stylesheet" href="css/books-available.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bookers.com</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-books.html">My Books</a></li>
+                <li><a href="books-available.html">Books Available</a></li>
+                <li><a href="book-listing.html">List a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="books-available">
+        <h1>Available Books for Trade</h1>
+        <div class="book-grid" id="booksAvailableContainer">
+            <!-- Available books will be dynamically added here -->
+        </div>
+    </section>
+
+    
+        <section class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by book, author or genre name">
+            <button id="searchButton">
+                <i class="fas fa-search"></i> <!-- Font Awesome icon, or replace with an image icon if preferred -->
+            </button>
+        </section>
+        
+   
+    <footer>
+        <p>&copy; 2024 Bookers.com. All rights reserved.</p>
+    </footer>
+
+    <script src="js/books-available.js"></script>
+</body>
+</html>

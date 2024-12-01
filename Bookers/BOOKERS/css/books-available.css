@@ -1,0 +1,119 @@
+body {
+    
+    font-family: 'Arial, Roboto';
+    margin: 0;
+    padding: 0;
+    background-color: #1e1d1d;
+    color: #fff;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #1e1d1d;
+    color: #fff;
+    border: 2px solid #f0a500;
+    font-family: 'Arial, sans-serif';
+    align-items: center;
+    padding: .7rem;
+    text-decoration: wavy;
+    box-shadow: 0 0 20px 1px rgba(236, 191, 95, 0.935);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.books-available h1 {
+    text-align: center;
+    color: #dca308;
+}
+
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 8px 0 0 8px; /* Rounded left corners only */
+    background-color: #1e1d1d;
+    color: #f9f9f9;
+    outline: none;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #888;
+    opacity: 0.7;
+}
+
+.search-bar button {
+    background-color: #353535;
+    border: 1px solid #555;
+    border-left: none;
+    border-radius: 0 8px 8px 0; /* Rounded right corners only */
+    padding: 10px;
+    cursor: pointer;
+    color: #dca308;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-item {
+    background-color: #353535;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+

@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial, Roboto';
+    margin: 0;
+    padding: 0;
+    background-color: #1e1d1d;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #2e2e2e;
+    color: #fff;
+    border: 2px, solid,#cd7823 ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #e27e14;
+    text-decoration: none;
+}
+
+.book-listing h1 {
+    text-align: center;
+    color: #dca308;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    background-color: #0a0a0a;
+    border-radius: 8px;
+    border: 2px solid #f0a500;
+    box-shadow: 0 0 20px 1px rgba(210, 152, 59, 0.935);
+}
+
+#book-description{
+    padding-bottom: 10%;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="text"], input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #f6ca2a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:#dca308;
+}
+footer {
+    border: 2px solid #eb9549;
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: bottom;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List a Book - Bookers.com</title>
+    <link rel="stylesheet" href="css/book-listing.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bookers.com</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-books.html">My Books</a></li>
+                <li><a href="books-available.html">Books Available</a></li>
+                <li><a href="book-listing.html">List a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-listing">
+        <h1>List a Book</h1>
+        <form id="book-listing-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required><br><br>
+
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author" name="book-author" required><br><br>
+
+            <label for="book-genre">Genre:</label>
+            <input type="text" id="book-genre" name="book-genre" required><br><br>
+
+            <label for="Year-of-Publishing">Year of Publishing:</label>
+            <input type="text" id="Year-of-Publishing" name="Year-of-Publishing:" required><br><br>
+
+            <label for="book-owner">Owner Number:</label>
+            <input type="text" id="book-owner" name="Owner Number:" required><br><br>
+
+            <label for="book-description">Book Description:</label>
+            <input type="text" id="book-description" name="book-description:" required><br><br>
+
+            <label for="book-image">Upload Book Cover:</label>
+            <input type="file" id="book-image" name="book-image" accept="image/*" required><br><br>
+
+            <input type="submit" value="List Book">
+        </form>
+    </section>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 Bookers.com. All rights reserved.</p>
+    </footer>
+
+    <script src="js/book-listing.js"></script>
+</body>
+</html>
