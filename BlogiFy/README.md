@@ -50,7 +50,7 @@ Contributions are welcome! To get started:
 4. Push to the branch (`git push origin feature-name`).  
 5. Open a pull request.  
 
-Please follow the [CONTRIBUTING.md](#) file for detailed guidelines.
+
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it.
