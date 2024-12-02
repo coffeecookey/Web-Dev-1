@@ -1,7 +1,4 @@
-# BlogiFy
-Here’s a detailed and descriptive README file for **BlogiFy**:
 
----
 
 # BlogiFy
 
