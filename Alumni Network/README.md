@@ -3,7 +3,7 @@
 ## Overview ##
 The Alumni Network project is a web-based application designed to connect alumni from our college. It offers an intuitive interface to manage alumni information and promote collaboration among students.
 
-## Project Structure #3
+## Project Structure ##
 1. index.html: The main HTML file that defines the structure of the web application.
 2. styles.css: A CSS file that handles the design and layout of the project.
 3. script.js: A JavaScript file for dynamic functionality and interactivity.
@@ -27,7 +27,7 @@ The Alumni Network project is a web-based application designed to connect alumni
 2. Implementing a search functionality for quick navigation.
 3. Integration with social media for better engagement.
 
-## Contributions are welcome! Fork the repository, create a new branch for your feature or bug fix, and submit a pull request.##
+## Contributions are welcome! Fork the repository, create a new branch for your feature or bug fix, and submit a pull request.
 
 License
 This project is licensed under the MIT License, allowing you to use, modify, and distribute it as you wish.
