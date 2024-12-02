@@ -73,7 +73,7 @@ Ensure you have the following installed:
    Save your favorite styles and organize them into personalized lookbooks.
 
 3. **Share and Collaborate**
-   Share your lookbooks with friends and get inspired by theirs.
+   Share your lookbooks with friends and get inspired by them.
 
 ---
 
