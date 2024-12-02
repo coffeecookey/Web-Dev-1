@@ -1,4 +1,4 @@
-# SanctuaryWay-Dapp
+# Sanctuary Way Dapp
 Discover Nature's Wonders : Your Ultimate National Park Guide 
 
 Find Our Website Here:
