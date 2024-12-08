@@ -3,6 +3,15 @@
 
 Welcome to the **Coffee Shop Website**, a beautifully crafted web application designed to showcase the charm of your coffee shop online. This project is perfect for coffee shop owners who want to engage their audience, present their menu, and build an online presence.
 
+# 🙌 Maintainers :
+
+- [Vani](https://github.com/vanivaranya)
+- [Shruti](https://github.com/shrutiinarang)
+
+# 👩‍💻 Owner :
+
+- [Shruti](https://github.com/shrutiinarang)
+
 ---
 
 ## 🌟 Features
