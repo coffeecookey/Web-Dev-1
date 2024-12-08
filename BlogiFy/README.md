@@ -56,7 +56,6 @@ Contributions are welcome! To get started:
 This project is licensed under the MIT License.
 
 ##  Acknowledgements  
-- Thanks to all contributors who have helped improve this project. 💙  
 - Icons and assets used in the project are sourced from [FontAwesome](https://fontawesome.com/) and [Unsplash](https://unsplash.com/). 🌍
 
 ---
