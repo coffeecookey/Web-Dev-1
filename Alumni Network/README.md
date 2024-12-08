@@ -5,7 +5,8 @@
 ## 🌟 Overview  
 The **Alumni Network** project is a web-based application designed to connect alumni from our college. It offers an intuitive interface to manage alumni information and promote collaboration among students. 🤝
 
----
+Maintainers : @vanivaranya and @shrutiinarang
+Owner : @https://github.com/sharma-anushka
 
 ## 📂 Project Structure  
 1. **index.html**: The main HTML file that defines the structure of the web application. 📝  
