@@ -5,7 +5,13 @@
 **Bookers** is a comprehensive solution designed for managing bookings and reservations efficiently. The project focuses on providing a seamless experience for users to create, manage, and monitor their bookings with enhanced security and scalability.
 
 ---
+# 🙌 Maintainers :
 
+- [Vani](https://github.com/vanivaranya)
+- [Shruti](https://github.com/shrutiinarang)
+
+# Owner : 
+- [Anusha](https://github.com/AnushaArora)
 ## Features
 
 - **User-Friendly Interface**: Simplified navigation and intuitive design for users.
