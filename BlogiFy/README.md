@@ -4,7 +4,14 @@
 
 ## 🌟 Overview  
 **BlogiFy** is a simple and user-friendly blogging platform that allows users to create, edit, and share their stories with the world. With a clean design and easy navigation, BlogiFy makes blogging accessible to everyone. ✍️
-![Alt text](BlogiFy/Images/background.jpg)
+
+# 🙌 Maintainers :
+
+- [Vani](https://github.com/vanivaranya)
+- [Shruti](https://github.com/shrutiinarang)
+
+# 👩‍💻 Owner :
+- [Yashika](https://github.com/YashikaGupta09)
 
 
 
