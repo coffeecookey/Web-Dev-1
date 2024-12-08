@@ -9,12 +9,12 @@ Welcome to our **Web Development Repository**! 🚀 This collection showcases a 
 - [Shruti](https://github.com/shrutiinarang)
 
 # 🙌 Collaborators :
-@AakxSha
-@YashikaGupta09
-@AnushaArora
-@sharma-anushka
-@technoenthus
-@joysa21
+- [Aakriti](https://github.com/AakxSha)
+- [Yashika](https://github.com/YashikaGupta09)
+- [Anusha](https://github.com/AnushaArora)
+- [Anushka](https://github.com/sharma-anushka)
+- [Disha](https://github.com/technoenthus)
+- [Joysa](https://github.com/joysa21)
 
 ---
 
