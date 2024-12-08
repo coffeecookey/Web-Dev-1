@@ -1,7 +1,5 @@
 
 
----
-
 # 📖 BlogiFy
 
 ## 🌟 Overview  
