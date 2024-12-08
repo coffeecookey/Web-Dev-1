@@ -4,6 +4,7 @@
 
 ## 🌟 Overview  
 **BlogiFy** is a simple and user-friendly blogging platform that allows users to create, edit, and share their stories with the world. With a clean design and easy navigation, BlogiFy makes blogging accessible to everyone. ✍️
+BlogiFy/Images/background.jpg
 
 
 
