@@ -6,7 +6,7 @@ Welcome to our **Web Development Repository**! 🚀 This collection showcases a 
 # 🙌 Maintainers :
 @vanivaranya and @shrutiinarang
 
-# 🙌 Contributors :
+# 🙌 Collaborators :
 @AakxSha
 @YashikaGupta09
 @AnushaArora
