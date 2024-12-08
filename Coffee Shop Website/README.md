@@ -6,7 +6,7 @@ Welcome to the **Coffee Shop Website**, a beautifully crafted web application de
 # 🙌 Maintainers :
 
 - [Vani](https://github.com/vanivaranya)
-- [Shruti](https://github.com/shrutiinarang)
+- [Shruti](https://github.com/Shruti-Narang)
 
 # 👩‍💻 Owner :
 
