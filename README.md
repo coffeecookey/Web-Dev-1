@@ -6,7 +6,7 @@ Welcome to our **Web Development Repository**! 🚀 This collection showcases a 
 # 🙌 Maintainers :
 
 - [Vani](https://github.com/vanivaranya)
-- [Shruti](https://github.com/shrutiinarang)
+- [Shruti](https://github.com/Shruti-Narang)
 
 # 🙌 Collaborators :
 - [Aakriti](https://github.com/AakxSha)
