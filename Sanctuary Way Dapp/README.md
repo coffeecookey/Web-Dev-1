@@ -4,6 +4,15 @@ Discover Nature's Wonders : Your Ultimate National Park Guide
 Find Our Website Here:
 https://sanctuary-way.netlify.app/
 
+# 🙌 Maintainers :
+
+- [Vani](https://github.com/vanivaranya)
+- [Shruti](https://github.com/shrutiinarang)
+
+# 👩‍💻 Owner :
+
+- [Aditi](https://github.com/aditi75432)
+
 
 <h3>Home Page</h3>
 
