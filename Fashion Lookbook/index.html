@@ -7,6 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#" class="logo">Fashion Lookbook</a>
+      <button class="mobile-menu-btn">☰</button>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Trends</a>
+        <a href="#" class="nav-link">Collections</a>
+        <a href="#" class="nav-link">Lookbook</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
   <!-- Hero Section -->
   <header class="hero">
     <h1>Fashion Lookbook</h1>
@@ -105,5 +122,14 @@
   <footer>
     <p>&copy; 2024 Fashion Lookbook. All rights reserved.</p>
   </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
