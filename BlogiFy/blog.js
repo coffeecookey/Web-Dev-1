@@ -1,4 +1,5 @@
 document.getElementById("save-btn").addEventListener("click", function () {
+  
     const title = document.getElementById("title").value;
     const content = document.getElementById("content").value;
     const image = document.getElementById("image").files[0];
@@ -17,7 +18,7 @@ document.getElementById("save-btn").addEventListener("click", function () {
   
     alert("Blog saved to local storage!");
     window.location.href = "savedBlogs.html"; 
-  });
+    });
   
   document.getElementById("category").addEventListener("change", function () {
     const category = this.value;
