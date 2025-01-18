@@ -1,5 +1,4 @@
-  document.getElementById("blog-form").addEventListener("submit", function (e) {
-    e.preventDefault(); 
+document.getElementById("save-btn").addEventListener("click", function () {
   
     const title = document.getElementById("title").value;
     const content = document.getElementById("content").value;
@@ -10,17 +9,16 @@
       content: content,
       date: new Date().toLocaleString(),
       image: image ? URL.createObjectURL(image) : null,
+      category: document.getElementById("category").value, 
     };
   
     let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
-  
     posts.push(blogPost);
-  
     localStorage.setItem("blogPosts", JSON.stringify(posts));
   
-    alert("Blog posted successfully!");
-    window.location.href = "index.html"; 
-  });
+    alert("Blog saved to local storage!");
+    window.location.href = "savedBlogs.html"; 
+    });
   
   document.getElementById("category").addEventListener("change", function () {
     const category = this.value;
