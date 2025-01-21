@@ -10,7 +10,7 @@ Welcome to the **Coffee Shop Website**, a beautifully crafted web application de
 
 # 👩‍💻 Collaborators :
 
-- [Shruti](https://github.com/shrutiinarang)
+
 - [Vamika](https://github.com/itsvamz)
 
 ---
