@@ -1,4 +1,5 @@
 document.getElementById("save-btn").addEventListener("click", function () {
+  
     const title = document.getElementById("title").value;
     const content = document.getElementById("content").value;
     const image = document.getElementById("image").files[0];
@@ -17,31 +18,7 @@ document.getElementById("save-btn").addEventListener("click", function () {
   
     alert("Blog saved to local storage!");
     window.location.href = "savedBlogs.html"; 
-  });
-  
-  document.getElementById("blog-form").addEventListener("submit", function (e) {
-    e.preventDefault(); 
-  
-    const title = document.getElementById("title").value;
-    const content = document.getElementById("content").value;
-    const image = document.getElementById("image").files[0];
-  
-    const blogPost = {
-      title: title,
-      content: content,
-      date: new Date().toLocaleString(),
-      image: image ? URL.createObjectURL(image) : null,
-    };
-  
-    let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
-  
-    posts.push(blogPost);
-  
-    localStorage.setItem("blogPosts", JSON.stringify(posts));
-  
-    alert("Blog posted successfully!");
-    window.location.href = "index.html"; 
-  });
+    });
   
   document.getElementById("category").addEventListener("change", function () {
     const category = this.value;
