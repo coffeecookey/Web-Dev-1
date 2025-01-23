@@ -12,23 +12,23 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" >
     <div class="nav-content">
       <a href="#" class="logo">Fashion Lookbook</a>
       <button class="mobile-menu-btn">☰</button>
       <div class="nav-links">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Trends</a>
-        <a href="#" class="nav-link">Collections</a>
-        <a href="#" class="nav-link">Lookbook</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#trends" class="nav-link">Trends</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#home" class="nav-link">Lookbook</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
 
 
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" id="home">
     <img src="./images/logo.png" alt="Logo" class="logo" style="width:100px;">
     <h1>Fashion Lookbook</h1>
     <p>Discover the latest trends</p>
@@ -37,7 +37,7 @@
   <!-- Carousel Section -->
 
 
-  <section class="hero-section">
+  <section class="hero-section" id="trends">
     <div class="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -85,7 +85,7 @@
   <script src="index.js"></script>
 
   <!-- Gallery Section -->
-  <section class="gallery">
+  <section class="gallery" id="collections">
     <div class="card">
       <img src="images/outfit1.jpg" alt="Casual Chic">
       <div class="card-info">
@@ -172,7 +172,7 @@
     </div>
   </section>
 
-  <footer class="contact">
+  <footer class="contact" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -197,7 +197,7 @@
           </ul>
         </div>
       </div>
-      <p>&copy; 2024 Fashion Lookbook. All rights reserved.</p>
+      <p style="text-align: center;">&copy; 2024 Fashion Lookbook. All rights reserved.</p>
     </div>
   </footer>
 
