@@ -78,13 +78,7 @@
   }
   
   /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
-    margin-top: 2rem;
-  }
+  
   
   /* Responsive Design */
   @media (max-width: 600px) {
@@ -186,6 +180,7 @@
     font-weight: 700;
     line-height: 1.1;
     background: linear-gradient(45deg, #ffffff, #e6e6e6);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
