@@ -118,28 +118,28 @@
 </style>
 </head>
 <body>
-    <!-- header section start -->
     <div class="main">
         <div class="navbar">
-           <div class="icon">
-            <h2 class="logo">Golden<br><span>Coffee Shop</span></h2>
-            </div>
-             <div class="menu">
-                <ul>
-                    <li><a href="./../index.html">HOME</a></li>
-                    <li><a href="./../pages/about.html">ABOUT</a></li>
-                    <li><a href="./../pages/product.html">PRODUCT</a></li>
-                    <li><a href="./../pages/contact.html">CONTACT</a></li>
-                    <li><a href="./../pages/services.html">SERVICES</a></li>
-                    <li><a href="./../pages/review.html">REVIEW</a></li>
-                    <li><a href="./../pages/login.html">LOGIN</a></li>
-                    <img src="./img/hamburger-menu.png" class="hamburger-menu"/>
-                </ul> 
-            </div>
-            <div class="search">
-               <input class="srch" type="search" name="" placeholder="Search">
-                <a href="#"><button class="btn">Search</button></a>
+            <div class="icon">
+             <h2 class="logo">Golden<br><span>Coffee Shop</span></h2>
              </div>
+              <div class="menu">
+                 <ul>
+                     <li><a href="./../index.html">HOME</a></li>
+                     <li><a href="./../pages/about.html">ABOUT</a></li>
+                     <li><a href="./../pages/product.html">PRODUCT</a></li>
+                     <li><a href="./../pages/contact.html">CONTACT</a></li>
+                     <li><a href="./../pages/services.html">SERVICES</a></li>
+                     <li><a href="./../pages/review.html">REVIEW</a></li>
+                     <li><a href="./../pages/login.html">LOGIN</a></li>
+                     <img src="./img/hamburger-menu.png" class="hamburger-menu"/>
+                 </ul> 
+             </div>
+             <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+                 <a href="#"><button class="btn">Search</button></a>
+              </div>
+    </div>
 
         </div>
         <!-- headter section end -->
@@ -234,45 +234,72 @@
                 price = 150;
                 break;
         
-                case 'NTRO COFFEE':
-                price = 110;
-                break;
+                // Calculate price based on coffee type
+                switch(coffeeType) {
+                    case 'Hot Coffee':
+                        price =  100;
+                        break;
+                    case 'Cappuccino':
+                        price = 100;
+                        break;
+                    case 'Fresh Cold Coffee':
+                        price = 100;
+                        break;
+                    case 'ICED COFFEE':
+                        price =100;
+                        break
+                        case 'FRONZE COFFEE':
+                        price = 90;
+                        break;
+                        case 'VALINA COFFEE':
+                        price = 100;
+                        break;
+                        case 'CHOCOLATE COFFEE':
+                        price = 150;
+                        break;
+                
+                        case 'NTRO COFFEE':
+                        price = 110;
+                        break;
+                
+                        case 'BLACK COFFEE':
+                        price = 100;
+                        break;
+                        case 'FLAT WHITE COFFEE':
+                        price = 110;
+                        break;
+                        case 'MOCHA COFFEE':
+                        price = 130;
+                        break;
+                        case 'SMOOTHIS COFFEE':
+                        price = 100;
+                        break;
+                        case 'FRAPPUCCINO COFFEE':
+                        price = 150;
+                        break;
+                        case 'CAPPUCCINO':
+                        price = 150;
+                        break;
+                        case 'EXPRESSO':
+                        price = 200;
+                        break;
+                
+                
+                
+                }
         
-                case 'BLACK COFFEE':
-                price = 100;
-                break;
-                case 'FLAT WHITE COFFEE':
-                price = 110;
-                break;
-                case 'MOCHA COFFEE':
-                price = 130;
-                break;
-                case 'SMOOTHIS COFFEE':
-                price = 100;
-                break;
-                case 'FRAPPUCCINO COFFEE':
-                price = 150;
-                break;
-                case 'CAPPUCCINO':
-                price = 150;
-                break;
-                case 'EXPRESSO':
-                price = 200;
-                break;
+                // Calculate total price
+                price *= quantity;
         
-        
-        
+                // Update price input field
+                document.getElementById('price').value = price.toFixed(2);
+                
+            }
         }
+    </script>
+    </div>
 
-        // Calculate total price
-        price *= quantity;
-
-        // Update price input field
-        document.getElementById('price').value = price.toFixed(2);
-        
-    }
-</script>
-<div>
+    <!-- Keep existing footer -->
     <footer class="footer">
         <div class="sections-container">
 
@@ -319,8 +346,9 @@
 
         <hr/>
         <p style="text-align: center; color: #ff7200; margin: 0; padding: 0;">Copyright@ Coffee Shop. All Rights Reserved</p>
+    </footer>
 
-    </footer></div>
+   
     <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
 </body>
 </html>
