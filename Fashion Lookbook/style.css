@@ -77,7 +77,8 @@
     color: #666;
   }
   
-
+  /* Footer */
+ 
   
   /* Responsive Design */
   @media (max-width: 600px) {
@@ -179,6 +180,7 @@
     font-weight: 700;
     line-height: 1.1;
     background: linear-gradient(45deg, #ffffff, #e6e6e6);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
