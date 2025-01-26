@@ -1,136 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Page</title>
-    <link rel="stylesheet" href="./../css/style.css"/>
-    <style>
-        body {
-            width: 100%;
-            background-image: url(./../images/order_page_image\ .jpg);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Page</title>
+<link rel="stylesheet" href="./../css/style.css"/>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-image: url(../images/order_page_image\ .jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
 
+    .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #874107;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        display: inline-block;
+        color: #333;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        background-color: #ff7200;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: brown;
+        transform: scale(1.05);
+    }
+
+    .astrisk{
+        color: rgb(197, 34, 34);
+    }
+
+    footer {
+        margin-top: 30px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #ff7200;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    .footer-sections {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .section-links p {
+        margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         h1 {
-            text-align: center;
-            color: #ff7200;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 600;
-            font-size: 0.95em;
+            font-size: 2rem;
         }
 
         input, select {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-            font-size: 1em;
+            font-size: 0.9rem;
         }
-
-        input:focus, select:focus {
-            border-color: #ff7200;
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(255, 114, 0, 0.2);
-        }
-
-        input[type="submit"] {
-            background-color: #ff7200;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 1.1em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            grid-column: 1 / -1;
-            margin-top: 20px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #e65a00;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 114, 0, 0.3);
-        }
-
-        #price {
-            background-color: #f8f9fa;
-            font-weight: bold;
-            color: #ff7200;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 20px;
-            }
-
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-        }
-
-        /* Style for form validation */
-        input:invalid {
-            border-color: #ff3860;
-        }
-
-        input:valid {
-            border-color: #00d1b2;
-        }
-
-        /* Custom select styling */
-        select {
-            appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1em;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="main">
@@ -156,88 +141,98 @@
               </div>
     </div>
 
-    <div class="container">
-        <h1>Order Your Coffee</h1>
-        <form action="order_processing_page.php" method="POST">
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
+        </div>
+        <!-- headter section end -->
+<div class="container">
+    <h1>Order Your Coffee</h1>
+    <form action="order_processing_page.php" method="POST">
+        <label for="name">Name: <span class="astrisk">*</span></label>
+        <input type="text" id="name" name="name"  placeholder="Enter Your Name" required>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
+        <label for="email">Email: <span class="astrisk">*</span></label>
+        <input type="email" id="email" name="email"  placeholder="Enter Your Name" required>
 
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
-                </div>
+        <label for="address">Address: <span class="astrisk">*</span></label>
+        <input type="text" id="address" name="address"  placeholder="Enter Your Address" required>
 
-                <div class="form-group">
-                    <label for="mobile">Mobile No.</label>
-                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
-                </div>
+        <label for="mobile">Mobile No.: <span class="astrisk">*</span></label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"   placeholder="Enter Your Mobile No "required>
 
-                <div class="form-group">
-                    <label for="coffee">Coffee Type</label>
-                    <select id="coffee" name="coffee" required>
-                        <option value="NONE">Select Coffee Type</option>
-                        <option value="Hot Coffee">Hot Coffee</option>
-                        <option value="Cappuccino">Cappuccino</option>
-                        <option value="Fresh Cold Coffee">Fresh Cold Coffee</option>
-                        <option value="ICED COFFEE">Iced Coffee</option>
-                        <option value="FRONZE COFFEE">Frozen Coffee</option>
-                        <option value="VALINA COFFEE">Vanilla Coffee</option>
-                        <option value="CHOCOLATE COFFEE">Chocolate Coffee</option>
-                        <option value="NTRO COFFEE">Nitro Coffee</option>
-                        <option value="BLACK COFFEE">Black Coffee</option>
-                        <option value="FLAT WHITE COFFEE">Flat White Coffee</option>
-                        <option value="MOCHA COFFEE">Mocha Coffee</option>
-                        <option value="SMOOTHIS COFFEE">Smoothie Coffee</option>
-                        <option value="FRAPPUCCINO COFFEE">Frappuccino</option>
-                        <option value="CAPPUCCINO">Cappuccino</option>
-                        <option value="EXPRESSO">Espresso</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="price">Price (₹)</label>
-                    <input type="text" id="price" name="price" readonly>
-                </div>
-
-                <div class="form-group">
-                    <label for="payment">Payment Type</label>
-                    <select id="payment" name="payment" required>
-                        <option value="credit">Credit Card</option>
-                        <option value="debit">Debit Card</option>
-                        <option value="paypal">PayPal</option>
-                        <option value="cash">Cash on Delivery</option>
-                    </select>
-                </div>
-
-                <input type="submit" value="Place Order">
-            </div>
-        </form>
-        <script>
-            // Calculate price based on coffee type and quantity
-            document.getElementById('coffee').addEventListener('change', function() {
-                calculatePrice();
-            });
-            document.getElementById('quantity').addEventListener('input', function() {
-                calculatePrice();
-            });
+        <label for="coffee">Coffee Type: <span class="astrisk">*</span></label>
+        <select id="coffee" name="coffee" required>
+            <option value="NONE">NONE</option>
+            <option value="Hot Coffee">HOT COFFEE</option>
+            <option value="Cappuccino">CAPPUCCINO</option>
+            <option value="Fresh Cold Coffee">FRESH COLD COFFEE</option>
+            <option value="ICED COFFEE">ICED COFFEE</option>
+            <option value="FRONZE COFFEE">FRONZE COFFEE</option>
+            <option value="VALINA COFFEE">VALINA COFFEE</option>
+            <option value="CHOCOLATE COFFEEo">CHOCOLATE COFFEE</option>
+            <option value="NTRO COFFEEo">NTRO COFFEE</option>
+            <option value="BLACK COFFEE">BLACK COFFEE</option>
+            <option value="FLAT WHITE COFFEE">FLAT WHITE COFFEE</option>
+            <option value="MOCHA COFFEE">MOCHA COFFEE</option>
+            <option value="SMOOTHIS COFFEE">SMOOTHIS COFFEE</option>
+            <option value="FRAPPUCCINO COFFEE">FRAPPUCCINO COFFEE</option>
+            <option value="CAPPUCCINO">CAPPUCCINO</option>
+            <option value="EXPRESSO">EXPRESSO</option>
         
-            function calculatePrice() {
-                const coffeeType = document.getElementById('coffee').value;
-                const quantity = document.getElementById('quantity').value;
-                let price = 0;
+        </select>
+
+        <label for="quantity">Quantity: <span class="astrisk">*</span></label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" readonly>
+
+        <label for="payment">Payment Type: <span class="astrisk">*</span></label>
+        <select id="payment" name="payment" required>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash on Delivery</option>
+        </select>
+
+        <input type="submit" value="Place Order"> 
+    </form>
+</div>
+<script>
+    // Calculate price based on coffee type and quantity
+    document.getElementById('coffee').addEventListener('change', function() {
+        calculatePrice();
+    });
+    document.getElementById('quantity').addEventListener('input', function() {
+        calculatePrice();
+    });
+
+    function calculatePrice() {
+        const coffeeType = document.getElementById('coffee').value;
+        const quantity = document.getElementById('quantity').value;
+        let price = 0;
+
+        // Calculate price based on coffee type
+        switch(coffeeType) {
+            case 'Hot Coffee':
+                price =  100;
+                break;
+            case 'Cappuccino':
+                price = 100;
+                break;
+            case 'Fresh Cold Coffee':
+                price = 100;
+                break;
+            case 'ICED COFFEE':
+                price =100;
+                break
+                case 'FRONZE COFFEE':
+                price = 90;
+                break;
+                case 'VALINA COFFEE':
+                price = 100;
+                break;
+                case 'CHOCOLATE COFFEE':
+                price = 150;
+                break;
         
                 // Calculate price based on coffee type
                 switch(coffeeType) {
@@ -300,7 +295,8 @@
                 document.getElementById('price').value = price.toFixed(2);
                 
             }
-        </script>
+        }
+    </script>
     </div>
 
     <!-- Keep existing footer -->
