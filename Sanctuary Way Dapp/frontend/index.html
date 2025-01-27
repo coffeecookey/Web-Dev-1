@@ -458,23 +458,46 @@
 
 
     <!-- smart contract -->
-
-
-
-
-    <siction id="fund" class="fund">
+    <section id="fund" class="fund">
       <div class="container-fund">
-          <h1 class="funds">Soroban Contract Funds</h1>
-          <div class="box-fund">
-              <form id="transferForm">
-                  <input type="text" id="recipient" placeholder="Recipient's Stellar Address" required>
-                  <input type="number" id="amount" placeholder="Amount to Transfer" required>
-                  <button type="submit">Donate</button>
-              </form>
-          </div>
+        <h1 class="funds"><b>Soroban Contract Funds</b></h1>
+        <div class="box-fund">
+          <form id="transferForm">
+            <!-- Recipient Address -->
+            <div class="form-group">
+              <i class="ti-wallet"></i>
+              <input type="text" id="recipient" placeholder="Recipient's Address" required>
+              <label for="recipient">Recipient's Address</label>
+            </div>
+    
+            <!-- Amount to Transfer -->
+            <div class="form-group">
+              <i class="ti-money"></i>
+              <input type="number" id="amount" placeholder="Amount to Transfer" required>
+              <label for="amount">Amount to Transfer</label>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">
+              <span class="btn-text">Donate</span>
+              <span class="btn-loader"></span>
+            </button>
+    
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message">
+              <i class="ti-check"></i>
+              <p>Transaction Successful!</p>
+            </div>
+    
+            <!-- Failure Message -->
+            <div id="failureMessage" class="failure-message">
+              <i class="ti-close"></i>
+              <p>Transaction Failed. Please try again.</p>
+            </div>
+          </form>
+        </div>
       </div>
-  </siction>
-
+    </section>
 
   <!-- Footer section -->
   <footer>
@@ -505,26 +528,15 @@
 
 
 
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with bot",
-      "botConversationDescription": "This chatbot was built by She Sharp Coders",
-      "botId": "32b39f94-607c-4cf8-b48f-97955320e705",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "32b39f94-607c-4cf8-b48f-97955320e705",
-      "webhookId": "5984b186-a8bd-442d-929d-889c6544e52e",
-      "lazySocket": true,
-      "themeName": "prism",
-      "frontendVersion": "v1",
-      "showPoweredBy": true,
-      "theme": "prism",
-      "themeColor": "#2563eb",
-      "allowedOrigins": []
-  });
-</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/{version}/stellar-sdk.js"></script>
+
+
+
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/01/26/06/20250126064023-AZ0KL4NQ.js"></script>
+    
+    
 
 
 </body>    
