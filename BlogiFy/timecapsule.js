@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         capsuleEntry.innerHTML = `
           <h3>${capsule.title}</h3>
           <p>${capsule.message}</p>
-          <div class="unlock-date">Unlocked on: ${unlockTime.toLocaleDateString()}</div>
+          <div class="unlock-date">Unlocked on: ${unlockTime.toLocaleString()}</div>
         `;
 
         capsuleContainer.appendChild(capsuleEntry);
