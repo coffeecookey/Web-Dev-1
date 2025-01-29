@@ -652,13 +652,37 @@ p{
 }
 
 /* Footer CSS */
-.copyright{
-    background: var(--bg-danger);
-}
-.copyright p,
-.copyright a{
-    color:var(--text-white);
-}
+footer.contact {
+    background-color: #EF3741;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer.contact h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer.contact p {
+    margin: 5px 0;
+  }
+  
+  footer.contact .social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  footer.contact .social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  footer.contact .social-media a:hover {
+    color: #ddd;
+  }
 
 /* Scroll Back To Top */
 #scrollUp{
